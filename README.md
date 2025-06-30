@@ -18,6 +18,13 @@
 <p align="center"><img src="readme_img/menu.png" alt="Visual Studio screenshoot" width="85%"></p>
 <p align="center">To compile and run the project open the <code>Game.sln</code> file and do it through Visual Studio</p>
 
+# How to play
+- Begin the game by pressing Enter in the menu
+- Choose your play (rock, paper or scissors) by pressing Z, X or C key on your keyboard
+- Wait for the opponent's play
+- Watch the result
+- Try not to die
+
 # Dependencies
 - SDL2
 - SDL_Image
