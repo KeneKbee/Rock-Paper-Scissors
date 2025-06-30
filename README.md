@@ -12,7 +12,7 @@
 - Sound
 - Video encoding onto frames readable by SDL
 
-# Dependecies
+# Dependencies
 - SDL2
 - SDL_Image
 - SDL_Mixer
