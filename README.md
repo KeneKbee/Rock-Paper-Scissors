@@ -5,7 +5,7 @@
 ## A game where you risk your life playing rock paper scissors against a killer machine
 <p align="center"><img src="readme_img/menu.png" alt="Game screenshot" width="80%"></p>
 
-# Features:
+# Features
 - Rich 2010s horror ambience
 - Functional AI
 - Textures
