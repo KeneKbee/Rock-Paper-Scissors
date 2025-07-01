@@ -1,31 +1,31 @@
-# Rock-Paper-Scissors ✊ 🖐 ✌
+# ✌ Rock-Paper-Scissors
 <p align="center"><img src="readme_img/menu.png" alt="Menu screenshot" width="85%"></p>
   
 
 <p align="center">A game where you risk your life playing rock paper scissors against a killer machine</p>
 
-# Features
+# ⭐ Features
 <p align="center"><img src="readme_img/menu.png" alt="Game screenshot" width="85%"></p>
 
-- Rich 2010s horror ambience
+- Rich atmospheric horror ambience inspired by 2010s style
 - Built with <b>SDL2</b> for graphics, audio, and input handling
 - Functional AI with decision-making logic for countering player's moves
 - Texture management with <b>SDL_Image</b>
 - Sound system with <b>SDL_Mixer</b>
 - Video decoding with <b>FFmpeg</b> onto frames readable by <b>SDL</b>
 
-# Compiling and running
+# 💻 Compiling and running
 <p align="center"><img src="readme_img/menu.png" alt="Visual Studio screenshoot" width="85%"></p>
 <p align="center">To compile and run the project open the <code>Game.sln</code> file and do it through Visual Studio</p>
 
-# How to play
+# 🎮 How to play
 - Begin the game by pressing Enter in the menu
 - Choose your play (rock, paper or scissors) by pressing Z, X or C key on your keyboard
 - Wait for the opponent's play
 - Watch the result
 - Try not to die
 
-# Dependencies
+# 📦 Dependencies
 - SDL2
 - SDL_Image
 - SDL_Mixer
