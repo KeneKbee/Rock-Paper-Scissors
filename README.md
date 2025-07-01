@@ -11,7 +11,7 @@
 <p align="center">A game where you risk your life playing rock paper scissors against a killer machine</p>
 
 # ⭐ Features
-<p align="center"><img src="readme_img/menu.png" alt="Game screenshot" width="85%"></p>
+<p align="center"><img src="readme_img/game.png" alt="Game screenshot" width="85%"></p>
 
 - Rich atmospheric horror ambience inspired by 2010s style
 - Built with <b>SDL2</b> for graphics, audio, and input handling
@@ -21,7 +21,7 @@
 - Video decoding with <b>FFmpeg</b> onto frames readable by <b>SDL</b>
 
 # 💻 Compiling and running
-<p align="center"><img src="readme_img/menu.png" alt="Visual Studio screenshoot" width="85%"></p>
+<p align="center"><img src="readme_img/vs.png" alt="Visual Studio screenshoot" width="85%"></p>
 <p align="center">To compile and run the project open the <code>Game.sln</code> file and do it through Visual Studio</p>
 
 # 🎮 How to play
