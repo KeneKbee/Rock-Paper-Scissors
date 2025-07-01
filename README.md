@@ -1,6 +1,6 @@
 <hr>
 
-### <h1 align="center">⚠️ Warning! This project is unlicensed for the time being. Do not redistribute or reuse the code/assets.</h1>
+# <h1 align="center">⚠️ Warning! This project is unlicensed for the time being. Do not redistribute or reuse the code/assets.</h1>
 
 <hr>
 
