@@ -13,7 +13,7 @@
 # ⭐ Features
 <p align="center"><img src="readme_img/game.png" alt="Game screenshot" width="85%"></p>
 
-- Rich atmospheric horror ambience inspired by 2010s style
+- Rich horror atmosphere inspired by 2010s style
 - Built with <b>SDL2</b> for graphics, audio, and input handling
 - Functional AI with decision-making logic for countering player's moves
 - Texture management with <b>SDL_Image</b>
