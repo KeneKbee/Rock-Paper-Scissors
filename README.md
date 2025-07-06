@@ -37,6 +37,11 @@
 - SDL_Mixer
 - FFmpeg
 
+# 🎵 Music
+- ***"Heavy Containment"***</a> from <a href="https://scpcb.fandom.com/wiki/Music">**SCP:CB**</a> by *Kevin MacLeod & FireFox*
+- ***"Menu"***</a> from <a href="https://scpcb.fandom.com/wiki/Music">**SCP:CB**</a> by *Tim Morrison*
+- ***"Impact Prelude"*** (edited) from <a href="https://incompetech.com">**incompetech.com**</a> by *Kevin MacLeod*, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
 <hr>
 
 <h1 align="center">Created by <a href="https://github.com/KeneKbee">KeneKbee</a></h1>
