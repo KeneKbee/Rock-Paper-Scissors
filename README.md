@@ -22,7 +22,7 @@
 
 # 💻 Compiling and running
 <p align="center"><img src="readme_img/vs.png" alt="Visual Studio screenshoot" width="85%"></p>
-<p align="center">To compile and run the project open the <code>Game.sln</code> file and do it through Visual Studio</p>
+<p align="center">To compile and run the project open the <code>Game.sln</code> file in "Game 1.4" folder and do it through Visual Studio</p>
 
 # 🎮 How to play
 - Begin the game by pressing Enter in the menu
