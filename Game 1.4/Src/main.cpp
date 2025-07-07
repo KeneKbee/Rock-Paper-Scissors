@@ -39,6 +39,7 @@ int main(int argc, char* argv[])
 	delete game;
 	game = nullptr;
 
+	std::cout << "\nPress Enter to close this console... ";
 	std::cin.get();
 
 	return 0;
