@@ -39,6 +39,7 @@ private:
 	void updateHandCounters();
 	void updateGame();
 	void updateGameType();
+	void renderObjects(SDL_Renderer* renderer);
 public:
 	static SDL_Event event;
 private:
@@ -64,6 +65,10 @@ private:
 
 	Video* intro = nullptr;
 	Video* credits = nullptr;
+
+	SDL_Texture* renderTarget = nullptr;
+
+	SDL_Rect innerWindowPos;
 };
 
 #endif

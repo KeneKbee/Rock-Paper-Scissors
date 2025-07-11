@@ -11,6 +11,15 @@ Game::Game(const char* title, int x, int y, int w, int h, bool fullscreen)
 	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
 	{
 		std::cout << "\033[1;36m" << "Subsystems Initialised." << "\033[0m" << std::endl;
+
+		if (fullscreen)
+		{
+			SDL_Rect display;
+			SDL_GetDisplayBounds(0, &display);
+			w = display.w;
+			h = display.h;
+		}
+
 		window = SDL_CreateWindow(title, x, y, w, h, flag);
 		SDL_SetWindowIcon(window, icon);
 
@@ -55,6 +64,17 @@ Game::Game(const char* title, int x, int y, int w, int h, bool fullscreen)
 
 			intro = new Video(renderer, "Intro.mp4");
 			credits = new Video(renderer, "Credits.mp4");
+
+			renderTarget = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1920, 1080);
+
+			float innerWindowScale = std::min((float)w / 1920, (float)h / 1080);
+			
+			int innerWindowWidth = 1920 * innerWindowScale;
+			int innerWindowHeight = 1080 * innerWindowScale;
+			int innerWindowOffsetX = (w - innerWindowWidth) / 2;
+			int innerWindowOffsetY = (h - innerWindowHeight) / 2;
+
+			innerWindowPos = { innerWindowOffsetX, innerWindowOffsetY, innerWindowWidth, innerWindowHeight };
 
 			intro->play();
 
@@ -376,33 +396,31 @@ void Game::update()
 	}
 }
 
-void Game::render()
+void Game::renderObjects(SDL_Renderer* renderer)
 {
-	SDL_RenderClear(renderer);
-
 	if (gamePart == INTRO)
 	{
 		intro->render(renderer);
 	}
-	else if(gamePart == MENU)
+	else if (gamePart == MENU)
 	{
 		SDL_RenderCopy(renderer, menuIMG, NULL, &screen);
 	}
-	else if(gamePart != DEATH_SCREEN && gamePart != CREDITS && gamePart != INTRO)
+	else if (gamePart != DEATH_SCREEN && gamePart != CREDITS && gamePart != INTRO)
 	{
 		SDL_RenderCopy(renderer, backgroundIMG, NULL, &screen);
 	}
-	else if(gamePart != CREDITS && gamePart != INTRO)
+	else if (gamePart != CREDITS && gamePart != INTRO)
 	{
 		SDL_RenderCopy(renderer, deathIMG, NULL, &screen);
 	}
 
-	if(gamePart != MENU && gamePart != DEATH_SCREEN && gamePart != CREDITS && gamePart != INTRO)
+	if (gamePart != MENU && gamePart != DEATH_SCREEN && gamePart != CREDITS && gamePart != INTRO)
 	{
 		shark->render(renderer);
 	}
 
-	if(gamePart != MENU && gamePart != DEATH_SCREEN && gamePart != ENDING && gamePart != CREDITS && gamePart != INTRO)
+	if (gamePart != MENU && gamePart != DEATH_SCREEN && gamePart != ENDING && gamePart != CREDITS && gamePart != INTRO)
 	{
 		player->render(renderer);
 	}
@@ -416,6 +434,18 @@ void Game::render()
 	{
 		credits->render(renderer);
 	}
+}
+
+void Game::render()
+{
+	SDL_SetRenderTarget(renderer, renderTarget);
+	SDL_RenderClear(renderer);
+
+	renderObjects(renderer);
+
+	SDL_SetRenderTarget(renderer, nullptr);
+
+	SDL_RenderCopy(renderer, renderTarget, nullptr, &innerWindowPos);
 
 	SDL_RenderPresent(renderer);
 }

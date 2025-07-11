@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "iniHandler.h"
 
 #ifdef _WIN32
 	#include "WinAnsi.h"
@@ -17,7 +18,13 @@ int main(int argc, char* argv[])
 	Uint32 frameStart;
 	int frameTime;
 
-	Game* game = new Game("Rock-Paper-Scissors", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1920, 1080, 0);
+	std::unordered_map<std::string, std::string> optionsData = ini::readFile("options.ini");
+
+	bool fullscreen = optionsData["fullscreen"] == "true";
+	int width = atoi(optionsData["width"].c_str());
+	int height = atoi(optionsData["height"].c_str());
+
+	Game* game = new Game("Rock-Paper-Scissors", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, fullscreen);
 	
 	while (game->running())
 	{
