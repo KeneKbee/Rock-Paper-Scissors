@@ -3,7 +3,6 @@
 #include <string>
 #include <unordered_map>
 #include <fstream>
-#include <iostream>
 
 namespace ini
 {
@@ -49,6 +48,11 @@ namespace ini
 					continue;
 				}
 
+				if (c == '#')
+				{
+					break;
+				}
+
 				if (isPartOfFirst)
 				{
 					first += c;
@@ -80,7 +84,7 @@ namespace ini
 
 		for (auto& pair : data)
 		{
-			if (pair.first.find(' ') != 0 || pair.first.find(':') != 0 || pair.second.find(' ') != 0 || pair.second.find(':') != 0)
+			if (pair.first.find(' ') != 0 || pair.first.find(':') != 0 || pair.first.find('#') != 0 || pair.second.find(' ') != 0 || pair.second.find(':') != 0)
 			{
 				throw std::runtime_error("Invalid ini syntax detected!");
 			}
