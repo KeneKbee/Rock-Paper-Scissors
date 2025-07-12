@@ -154,6 +154,7 @@
     <ClCompile Include="Src\Classes\Video.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\iniHandler.h" />
     <ClInclude Include="Src\resource.h" />
     <ClInclude Include="Src\Classes\Key.h" />
     <ClInclude Include="Src\Classes\MoneyBox.h" />
