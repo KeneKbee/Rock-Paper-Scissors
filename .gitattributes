@@ -1,5 +1,5 @@
-"Game 1.4/Assets/Videos/Credits.mp4" filter=lfs diff=lfs merge=lfs -text
-"Game 1.4/avcodec-62.dll" filter=lfs diff=lfs merge=lfs -text
-"Game 1.4/Libs/FFmpeg/bin/avcodec-62.dll" filter=lfs diff=lfs merge=lfs -text
+"Game 1.5/Assets/Videos/Credits.mp4" filter=lfs diff=lfs merge=lfs -text
+"Game 1.5/avcodec-62.dll" filter=lfs diff=lfs merge=lfs -text
+"Game 1.5/Libs/FFmpeg/bin/avcodec-62.dll" filter=lfs diff=lfs merge=lfs -text
 
-Game\ 1.4/Libs/** linguist-vendored
+Game\ 1.5/Libs/** linguist-vendored
