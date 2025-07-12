@@ -69,8 +69,8 @@ Game::Game(const char* title, int x, int y, int w, int h, bool fullscreen)
 
 			float innerWindowScale = std::min((float)w / 1920, (float)h / 1080);
 			
-			int innerWindowWidth = 1920 * innerWindowScale;
-			int innerWindowHeight = 1080 * innerWindowScale;
+			int innerWindowWidth = (int) (1920 * innerWindowScale);
+			int innerWindowHeight = (int) (1080 * innerWindowScale);
 			int innerWindowOffsetX = (w - innerWindowWidth) / 2;
 			int innerWindowOffsetY = (h - innerWindowHeight) / 2;
 
