@@ -71,8 +71,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(ProjectDir)\Libs\FFmpeg\include;$(ProjectDir)\Libs\SDL2\SDL2_mixer\include;$(ProjectDir)\Libs\SDL2\SDL2_image\include;$(ProjectDir)\Libs\SDL2\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\Libs\FFmpeg\lib;$(ProjectDir)\Libs\SDL2\SDL2_mixer\lib\x86;$(ProjectDir)\Libs\SDL2\SDL2_image\lib\x86;$(ProjectDir)\Libs\SDL2\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>
+    </IncludePath>
+    <LibraryPath>
+    </LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDir)\Libs\FFmpeg\include;$(ProjectDir)\Libs\SDL2\SDL2_mixer\include;$(ProjectDir)\Libs\SDL2\SDL2_image\include;$(ProjectDir)\Libs\SDL2\SDL2\include;$(IncludePath)</IncludePath>
@@ -81,6 +83,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(ProjectDir)\Libs\FFmpeg\include;$(ProjectDir)\Libs\SDL2\SDL2_mixer\include;$(ProjectDir)\Libs\SDL2\SDL2_image\include;$(ProjectDir)\Libs\SDL2\SDL2\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\Libs\FFmpeg\lib;$(ProjectDir)\Libs\SDL2\SDL2_mixer\lib\x64;$(ProjectDir)\Libs\SDL2\SDL2_image\lib\x64;$(ProjectDir)\Libs\SDL2\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath />
+    <LibraryPath />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
