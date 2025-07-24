@@ -20,6 +20,13 @@
 - Sound system with <b>SDL_Mixer</b>
 - Video decoding with <b>FFmpeg</b> onto frames readable by <b>SDL</b>
 
+# 📝 Installing
+1. Make sure that you have Visual Studio 2022 with C++ Installed
+2. Clone this project in bash
+   ```bash
+   git clone https://github.com/KeneKbee/Rock-Paper-Scissors.git
+    ```
+
 # 💻 Compiling and running
 <p align="center"><img src="readme_img/vs.png" alt="Visual Studio screenshoot" width="85%"></p>
 <p align="center">To compile and run the project open the <code>Game.sln</code> file with Visual Studio in "Game 1.5" folder and press <code>F5</code></code></p>
