@@ -31,6 +31,12 @@
 <p align="center"><img src="readme_img/vs.png" alt="Visual Studio screenshoot" width="85%"></p>
 <p align="center">To compile and run the project open the <code>Game.sln</code> file with Visual Studio in "Game 1.5" folder and press <code>F5</code></code></p>
 
+# ⚙ Configuring
+### In file `options.ini` in "Game 1.5" folder are 3 configurable options:
+- fullscreen - rendering the game window in current monitor's resolution (true or false)
+- width - width of the game window (integer value)
+- height - height of the game window (integer value)
+
 # 🎮 How to play
 - Begin the game by pressing Enter in the menu
 - Choose your play (rock, paper or scissors) by pressing Z, X or C key on your keyboard
