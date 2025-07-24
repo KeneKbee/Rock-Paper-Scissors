@@ -15,7 +15,7 @@
 
 - Rich horror atmosphere inspired by 2010s style
 - Built with <b>SDL2</b> for graphics, audio, and input handling
-- Functional AI with decision-making logic for countering player's moves
+- AI with decision-making logic for countering player's moves
 - Texture management with <b>SDL_Image</b>
 - Sound system with <b>SDL_Mixer</b>
 - Video decoding with <b>FFmpeg</b> onto frames readable by <b>SDL</b>
