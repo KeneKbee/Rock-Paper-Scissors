@@ -22,7 +22,7 @@
 
 # 📝 Installing
 1. Make sure that you have Visual Studio 2022 with C++ Installed
-2. Clone this project in bash
+2. Clone this project in bash<br><br>
    ```bash
    git clone https://github.com/KeneKbee/Rock-Paper-Scissors.git
     ```
