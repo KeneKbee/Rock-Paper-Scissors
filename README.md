@@ -28,8 +28,7 @@
     ```
 
 # 💻 Compiling and running
-<p align="center"><img src="readme_img/vs.png" alt="Visual Studio screenshoot" width="85%"></p>
-<p align="center">To compile and run the project open the <code>Game.sln</code> file with Visual Studio in "Game 1.5" folder and press <code>F5</code></code></p>
+### To compile and run the project open the <code>Game.sln</code> file with Visual Studio in "Game 1.5" folder and press `F5`
 
 # ⚙ Configuring
 ### In file `options.ini` in "Game 1.5" folder are 3 configurable options:
