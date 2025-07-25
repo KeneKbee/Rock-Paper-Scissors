@@ -1,9 +1,3 @@
-<hr>
-
-# <h1 align="center">⚠️ Warning! This project is unlicensed for the time being. Do not redistribute or reuse the code/assets.</h1>
-
-<hr>
-
 # ✌ Rock-Paper-Scissors
 <p align="center"><img src="readme_img/menu.png" alt="Menu screenshot" width="85%"></p>
   
