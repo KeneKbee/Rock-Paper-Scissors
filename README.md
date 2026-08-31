@@ -24,7 +24,7 @@
 # Compiling and running
 ### To compile and run the project open the <code>Game.sln</code> file with Visual Studio in "Game 1.5" folder and press `F5`
 
-# ⚙ Configuring
+# Configuring
 ### In file `options.ini` in "Game 1.5" folder are 3 configurable options:
 - fullscreen - rendering the game window in current monitor's resolution (true or false)
 - width - width of the game window (integer value)
