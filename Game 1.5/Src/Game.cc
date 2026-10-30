@@ -55,7 +55,7 @@ Game::Game(const char* title, int x, int y, int w, int h, bool fullscreen)
 			screen.x = 0;
 
 			Mix_Init(0);
-			Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024);
+			Mix_OpenAudioDevice(44100, MIX_DEFAULT_FORMAT, 2, 1024, NULL, 0);
 
 			menuMusic = AssetLoader::CreateMusic("MainMenu.wav");
 			gameMusic = AssetLoader::CreateMusic("GameAmbience.wav");

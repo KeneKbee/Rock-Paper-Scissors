@@ -23,7 +23,7 @@ SDL_Texture* AssetLoader::CreateTexture(std::string path, SDL_Renderer* renderer
 
 Mix_Music* AssetLoader::CreateMusic(std::string path)
 {
-	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024);
+	Mix_OpenAudioDevice(44100, MIX_DEFAULT_FORMAT, 2, 1024, NULL, 0);
 
 	path = "Assets/Sounds/Music/" + path;
 
@@ -44,7 +44,7 @@ Mix_Music* AssetLoader::CreateMusic(std::string path)
 
 Mix_Chunk* AssetLoader::CreateSound(std::string path)
 {
-	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024);
+	Mix_OpenAudioDevice(44100, MIX_DEFAULT_FORMAT, 2, 1024, NULL, 0);
 
 	path = "Assets/Sounds/Sfx/" + path;
 
